@@ -1,7 +1,6 @@
 import 'dotenv/config'
-import express from 'express'
 import connectDb from './db/dbconnector.js'
-const app = express()
+import { app } from './app.js'
 
 connectDb()
   .then(() => {

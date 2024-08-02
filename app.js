@@ -18,7 +18,9 @@ app.use(express.static('public'))
 app.use(cookieParser())
 
 // routers definition
-import { movieRouter } from './routes/movie.routes.js'
+
+import movieRouter from './routes/movie.routes.js'
 app.use('/api/v1/movies', movieRouter)
+console.log('hi thwere')
 
 export { app }
