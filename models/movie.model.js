@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const movieSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, ' Duration is required field'],
+    required: [true, ' name is required field'],
     unique: true
   },
   description: {

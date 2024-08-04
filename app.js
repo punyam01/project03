@@ -21,6 +21,5 @@ app.use(cookieParser())
 
 import movieRouter from './routes/movie.routes.js'
 app.use('/api/v1/movies', movieRouter)
-console.log('hi thwere')
 
 export { app }
